@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<header>
+		<h1>Quiddler Score Keeper</h1>
+	</header>
+	<div id="scoreBar">
+		<ul id="playersRow">
+			<li id="tokenLanding">Bonus Chips</li>
+		</ul>
+	</div>
+	{% if !game_started %}
+		<div id="addPlayers">
+			<h2>Add Players</h2>
+			<input type="text" name="name" id="new_name">
+			<a href="" id="addName">Add</a>
+			<p></p>
+			<ol id="player_list">
+			</ol>
+			<a href="" id="startGame">Start Game</a>
+		</div>
+	{% else %}
+	{% endif %}
+	<script src="/javascripts/main.js" type="text/javascript"></script>
+{% endblock %}
